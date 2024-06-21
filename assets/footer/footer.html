@@ -15,7 +15,9 @@
       <p>All rights reserved by gp1（仮）.</p>
     </footer>
     <script type="text/javascript">
-      document.getElementById('place').textContent = '現在地：' + location.pathname;
+      var where_you_are = location.pathname;
+      var names = where_you_are.split("/");
+      document.getElementById('place').textContent = '現在地：' + names[names.length - 1];
     </script>
     <!-- footer ここまで -->
   </body>
