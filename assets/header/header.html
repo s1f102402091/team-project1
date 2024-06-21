@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メニューバー</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        .navbar-left {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .navbar-right button {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        
+        .navbar-right button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span>タイトル</span>
+        </div>
+        <div class="navbar-right">
+            <button type="button">世界のお金</button>
+            <button type="button">日本のお金</button>
+        </div>
+    </nav>
+</body>
+</html>
