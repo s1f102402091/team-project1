@@ -5,7 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
+
 <body>
-  
+  <!-- footer ここから -->
+  <footer>
+    <p id="place">現在地</p>
+    <p id="copyright">All rights reserved by gp1（仮）.</p>
+  </footer>
+  <script type="text/javascript">
+    var where_you_are = location.pathname;
+    var names = where_you_are.split("/");
+    document.getElementById('place').textContent = '現在地：' + names[names.length - 1];
+  </script>
+  <!-- footer ここまで -->
 </body>
 </html>
