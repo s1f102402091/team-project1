@@ -1,4 +1,4 @@
 $(function(){
-    $("#menu").load("../../assets/header/header.html");
+    $("#menu").load("/assets/header/header.html");
   });
   
